@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------
 ## Matière 2I2D
-- 
+
+
 --------------------------------------------------------------------------
 ## Matière Maths
 - [ ] [[S01 - Dérivations]]
@@ -13,9 +14,17 @@
 - [ ] [[S09 - Intégrale d'une fonction positive]]
 - [ ] [[S08 - Equations différentielles]]
 - [ ] [[Rappel - Variations]]
+
 --------------------------------------------------------------------------
 ## Matière Philosophie
-- 
+- [ ] [[L'Art et la Vérité]]
+- [ ] [[La Justice]]
+- [ ] [[La Liberté]]
+- [ ] [[La Nature]]
+- [ ] [[La Religion]]
+- [ ] [[La Technique]]
+- [ ] [[XYZ - Méthode de la dissertation]]
+
 --------------------------------------------------------------------------
 ## Matière Physique-Chimie
 - [ ] [[01 - Mesures et incertitude]]
@@ -28,12 +37,16 @@
 - [ ] [[08 - Combustions]]
 - [ ] [[09 - Oxydo-réduction (piles, accumulateurs et piles à combustible)]]
 - [ ] [[10 - Réactions chimiques acido-basiques]]
-- [ ] [[IDK - Statistique des fluides]]
+
 --------------------------------------------------------------------------
 ## Matière SIN
-- 01 - CAN
-- 02 - Signaux
-- 03 - Réseaux
-- 04 - Langages du WEB (HTML + requêtes)
+- [ ] [[01 - CAN]]
+- [ ] [[02 - Signaux et déphasage]]
+- [ ] [[03 - Réseaux]]
+- [ ] [[04 - Energie interne]]
+- [ ] [[05 - Trames Ethernet]]
+- [ ] [[06 - Hexadécimal, décimal]]
+- [ ] [[07 - Logigrammes]]
+- [ ] [[08 - Résistances, circuit électriques]]
 
 --------------------------------------------------------------------------
