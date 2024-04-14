@@ -1,4 +1,4 @@
-# BAC-2024-Obsidian-Sync
+# BAC 2024 Obsidian Sync
 
 Ce repository a pour objectif de centraliser toutes les notes que j'ai créées avec Obsidian et de les mettre à jour au fur et à mesure de mon travail. J'ai pensé qu'il serait judicieux de les partager avec un large public, car elles pourraient être utiles à chacun.
 
