@@ -32,6 +32,7 @@ export default function Page({ source, meta }: SlugPageProps) {
             ];
         }
         // otherwise return default images array set in config file
+        // @ts-ignore
         return siteConfig.nextSeo?.openGraph?.images || [];
     })();
 
