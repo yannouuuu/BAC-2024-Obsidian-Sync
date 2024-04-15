@@ -1,19 +1,19 @@
-import Script from "next/script";
-import { DefaultSeo } from "next-seo";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-import type { AppProps } from "next/app";
-import { SearchProvider, pageview, ThemeProvider } from "@portaljs/core";
 import type { NavGroup, NavItem, ThemeConfig } from "@portaljs/core";
+import { pageview, SearchProvider, ThemeProvider } from "@portaljs/core";
+import { DefaultSeo } from "next-seo";
+import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
+import Script from "next/script";
+import { useEffect } from "react";
 
 import { Layout } from "@/components/Layout";
 import siteConfig from "@/config/siteConfig";
 
-import "tailwindcss/tailwind.css";
 import "@/styles/docsearch.css";
 import "@/styles/global.css";
 import "@/styles/prism.css";
 import { Analytics } from "@portaljs/core";
+import "tailwindcss/tailwind.css";
 
 export interface CustomAppProps {
     meta: {
@@ -40,17 +40,23 @@ const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
         showComments: meta?.showComments,
         editUrl: meta?.editUrl,
         urlPath: meta?.urlPath,
+        // @ts-ignore
         commentsConfig: siteConfig.comments,
         nav: {
+            // @ts-ignore
             title: siteConfig.navbarTitle?.text ?? siteConfig.title,
+            // @ts-ignore
             logo: siteConfig.navbarTitle?.logo,
             links: siteConfig.navLinks,
+            // @ts-ignore
             search: siteConfig.search,
+            // @ts-ignore
             social: siteConfig.social,
         },
         author: {
             name: siteConfig.author,
             url: siteConfig.domain,
+            // @ts-ignore
             logo: siteConfig.logo,
         },
         theme: {
@@ -81,11 +87,16 @@ const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
         >
             <DefaultSeo
                 defaultTitle={siteConfig.title}
+                // @ts-ignore
                 {...siteConfig.nextSeo}
             />
-            {siteConfig.analyticsConfig && (
-                <Analytics analyticsConfig={siteConfig.analyticsConfig} />
-            )}
+            {
+                // @ts-ignore
+                siteConfig.analyticsConfig && (
+                    // @ts-ignore
+                    <Analytics analyticsConfig={siteConfig.analyticsConfig} />
+                )
+            }
             {/*For compatibility, keep this.*/}
             {/* Global Site Tag (gtag.js) - Google Analytics */}
             {siteConfig.analytics && (
@@ -110,7 +121,12 @@ const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
                     />
                 </>
             )}
-            <SearchProvider searchConfig={siteConfig.search}>
+            <SearchProvider
+                searchConfig={
+                    // @ts-ignore
+                    siteConfig.search
+                }
+            >
                 <Layout {...layoutProps}>
                     <Component {...pageProps} />
                 </Layout>
